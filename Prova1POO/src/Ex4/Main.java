@@ -12,7 +12,7 @@ public class Main {
 			if(g.nextInt(2) == 1) {
 				c[i] = new Corrente(g.nextInt(1000),g.nextInt(10));
 			}else {
-				c[i] = new Poupanca(g.nextInt(1000),g.nextInt(10));
+				c[i] = new Poupanca(g.nextInt(1000),g.nextInt(100));
 			}
 		}
 		
@@ -24,7 +24,6 @@ public class Main {
 				System.out.println("Saldo da conta: "+((Corrente)c[i]).getSaldo());
 			}
 		}
-		
 	}
 
 }

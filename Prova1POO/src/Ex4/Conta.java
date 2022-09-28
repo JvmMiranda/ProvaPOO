@@ -12,7 +12,11 @@ public class Conta {
 	}
 	
 	public void setSaldoSac(double saldo) {
-		this.saldo -= saldo;
+		if(this.saldo < saldo) {
+			System.out.println("Tu não tem tudo isso não irmão");
+		}else {
+			this.saldo -= saldo;
+		}
 	}
 	
 	public Conta(double saldo) {

@@ -16,9 +16,9 @@ public class Pessoa {
 		super();
 	}
 	
-	public String getNomeCompleto() {
+	public Pessoa getNomeCompleto() {
 		Pessoa aux = new Pessoa(this.nome,this.sobrenome);
-		return aux.toString();
+		return aux;
 	}
 	
 	@Override
